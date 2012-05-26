@@ -14,9 +14,9 @@ public class Tree implements Serializable {
 	private String id;
 	private String text;
 	private String iconCls;
-	private boolean expanded;
 	private boolean leaf;
-	private String url;
+    private boolean expanded;
+    private String url;
 	private List<Tree> children;
 
 	public String getId() {

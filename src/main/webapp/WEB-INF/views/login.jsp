@@ -12,7 +12,8 @@
 <body class="x-border-layout-ct" style="position: static; overflow: hidden;">
 	<table id="logo-table" style="margin-top: 6%;">
 		<tr>
-			<td align="center" height="65"><a href="${ctx}/"><img src="${ctx}/resources/images/login.gif"></img> </a>
+			<td align="center" height="65">
+                <%--<a href="${ctx}/"><img src="${ctx}/resources/images/login.gif"></img> </a>--%>
 			</td>
 		</tr>
 	</table>

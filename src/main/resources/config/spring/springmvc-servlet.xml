@@ -95,6 +95,7 @@
 			<mvc:mapping path="/user**/**" />
 			<mvc:mapping path="/module**/**" />
 			<mvc:mapping path="/field**/**" />
+			<mvc:mapping path="/develop**/**" />
 			<bean class="com.chenxin.authority.web.interseptor.LoginInterceptor"></bean>
 		</mvc:interceptor>
 	</mvc:interceptors>

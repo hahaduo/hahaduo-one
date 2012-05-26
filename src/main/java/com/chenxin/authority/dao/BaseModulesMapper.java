@@ -15,7 +15,7 @@ public interface BaseModulesMapper {
 	 * 最好不要带外部参数拼装进来，防止SQL注入<br>
 	 * 非正常情况不要用
 	 * 
-	 * @param example
+	 * @param dynamicSql
 	 * @return
 	 */
 	List<HashMap<String, Object>> selectByDynamicSql(Criteria dynamicSql);

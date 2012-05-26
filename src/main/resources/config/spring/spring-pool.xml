@@ -14,6 +14,15 @@
 		<property name="jdbcUrl" value="${oracle.jdbc.url}" />
 		<property name="user" value="${oracle.jdbc.username}" />
 		<property name="password" value="${oracle.jdbc.password}" />
+
+        <!--<property name="driverClass" value="${mysql.jdbc.driverClassName}" />-->
+        <!--<property name="jdbcUrl" value="${mysql.jdbc.url}" />-->
+        <!--<property name="user" value="${mysql.jdbc.username}" />-->
+        <!--<property name="password" value="${mysql.jdbc.password}" />-->
+
+
+
+
 		<!-- 当连接池中的连接耗尽的时候c3p0一次同时获取的连接数。Default: 3 -->
 		<property name="acquireIncrement" value="5" />
 		<!-- 定义在从数据库获取新连接失败后重复尝试的次数。Default: 30 -->
@@ -47,6 +56,11 @@
 		<property name="jdbcUrl" value="${oracle.jdbc.url}" />
 		<property name="username" value="${oracle.jdbc.username}" />
 		<property name="password" value="${oracle.jdbc.password}" />
+
+        <!--<property name="driverClass" value="${mysql.jdbc.driverClassName}" />-->
+        <!--<property name="jdbcUrl" value="${mysql.jdbc.url}" />-->
+        <!--<property name="username" value="${mysql.jdbc.username}" />-->
+        <!--<property name="password" value="${mysql.jdbc.password}" />-->
 		<!-- 检查数据库连接池中空闲连接的间隔时间，单位是分，默认值：240，如果要取消则设置为0 -->
 		<property name="idleConnectionTestPeriodInMinutes" value="60" />
 		<!-- 连接池中未使用的链接最大存活时间，单位是分，默认值：60，如果要永远存活设置为0 -->
@@ -71,6 +85,11 @@
 		<property name="driverUrl" value="${oracle.jdbc.url}" />
 		<property name="user" value="${oracle.jdbc.username}" />
 		<property name="password" value="${oracle.jdbc.password}" />
+
+        <!--<property name="driver" value="${mysql.jdbc.driverClassName}" />-->
+        <!--<property name="driverUrl" value="${mysql.jdbc.url}" />-->
+        <!--<property name="user" value="${mysql.jdbc.username}" />-->
+        <!--<property name="password" value="${mysql.jdbc.password}" />-->
 		<!--数据源的别名 -->
 		<property name="alias" value="proxool_alias" />
 		<!-- 空闲连接个数 默认为0 -->
@@ -89,6 +108,12 @@
 		<property name="url" value="${oracle.jdbc.url}" />
 		<property name="username" value="${oracle.jdbc.username}" />
 		<property name="password" value="${oracle.jdbc.password}" />
+
+        <!--<property name="driverClassName" value="${mysql.jdbc.driverClassName}" />-->
+        <!--<property name="url" value="${mysql.jdbc.url}" />-->
+        <!--<property name="username" value="${mysql.jdbc.username}" />-->
+        <!--<property name="password" value="${mysql.jdbc.password}" />-->
+
 		<!--连接池启动时的初始化 -->
 		<property name="initialSize" value="1" />
 		<!--连接池的最大值 -->
