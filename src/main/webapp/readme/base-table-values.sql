@@ -41,6 +41,15 @@ values (21, '供应商信息', '/oprator', 2, 1, 0, 1, 1, 'oprator', 'cde', null
 commit;
 
 
+insert into BASE_ROLES (role_id, role_name, role_desc)values ('3D84F5FEB9D44E28B5D91710C637283A', '管理员', '管理员');
+insert into BASE_ROLES (role_id, role_name, role_desc)values ('754701188F1F40C782171D0E3040E5D2', '测试角色', '测试角色');
+commit;
+
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '用户信息');
+commit;
+
+
 insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('91F1012B942441BBBFEBB01E0859F453', '754701188F1F40C782171D0E3040E5D2', 2);
 insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('BB6294112EEE412F9F5C2E717958E10D', '754701188F1F40C782171D0E3040E5D2', 21);
 insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('E730317B9410429DB6F9A00ABF9332FF', '3D84F5FEB9D44E28B5D91710C637283A', 1);
@@ -52,14 +61,6 @@ insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('86D6AF
 insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('70D092E4C4644417AF64963B7DAB7D13', '3D84F5FEB9D44E28B5D91710C637283A', 21);
 commit;
 
-
-insert into BASE_ROLES (role_id, role_name, role_desc)values ('3D84F5FEB9D44E28B5D91710C637283A', '管理员', '管理员');
-insert into BASE_ROLES (role_id, role_name, role_desc)values ('754701188F1F40C782171D0E3040E5D2', '测试角色', '测试角色');
-commit;
-
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '用户信息');
-commit;
 
 insert into BASE_USER_ROLE (user_role_id, user_id, role_id)values ('D1424A23EB254AE59FFE604343E2BBB3', '38AD4E59A9D64F95AE77AAB16D198DDA', '3D84F5FEB9D44E28B5D91710C637283A');
 insert into BASE_USER_ROLE (user_role_id, user_id, role_id)values ('543E84984C4D4E76BE120174225A8422', 'E9F8563613364D13AC7F503591EE8F6E', '754701188F1F40C782171D0E3040E5D2');
