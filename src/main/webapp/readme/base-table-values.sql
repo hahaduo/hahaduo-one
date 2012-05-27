@@ -1,43 +1,43 @@
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '�Ա�', '0', '��', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '�Ա�', '1', 'Ů', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '�Ա�', '2', '����', 1, 3);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '�Ա�', '3', '����', 0, 4);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '10', '10��/ҳ', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '20', '20��/ҳ', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '30', '30��/ҳ', 1, 3);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '50', '50��/ҳ', 1, 4);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '���', 'xtheme-blue.css', '������ɫ', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '���', 'xtheme-gray.css', '��Լ��ɫ', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '��ģ��', '0', '���ڵ�', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '��ģ��', '1', '�ӽڵ�', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', 'չ��״̬', '0', '����', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', 'չ��״̬', '1', 'չ��', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '�Ƿ���ʾ', '0', '��', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '�Ƿ���ʾ', '1', '��', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '100', '100��/ҳ', 1, 5);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '200', '200��/ҳ', 1, 6);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', 'ÿҳ��ʾ����', '500', '500��/ҳ', 0, 7);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '�Ƿ�����', '0', '����', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '�Ƿ�����', '1', '����', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '0', '男', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '1', '女', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '2', '其他', 1, 3);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '3', '保密', 0, 4);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '10', '10条/页', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '20', '20条/页', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '30', '30条/页', 1, 3);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '50', '50条/页', 1, 4);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '风格', 'xtheme-blue.css', '经典蓝色', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '风格', 'xtheme-gray.css', '简约灰色', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '父模块', '0', '父节点', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '父模块', '1', '子节点', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', '展开状态', '0', '收缩', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', '展开状态', '1', '展开', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '是否显示', '0', '否', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '是否显示', '1', '是', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '100', '100条/页', 1, 5);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '200', '200条/页', 1, 6);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '500', '500条/页', 0, 7);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '是否启用', '0', '禁用', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '是否启用', '1', '启用', 1, 1);
 commit;
 
 
 
 
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (14, 'ϵͳ�ֶι���', '/field', 1, 1, 1, 4, 1, 'field', 'field', null);
+values (14, '系统字段管理', '/field', 1, 1, 1, 4, 1, 'field', 'field', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (11, '��ɫ����', '/role', 1, 1, 0, 3, 1, 'Role Management', 'role', null);
+values (11, '角色管理', '/role', 1, 1, 0, 3, 1, 'Role Management', 'role', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (12, '�û�����', '/user', 1, 1, 0, 2, 1, 'User Management', 'user', null);
+values (12, '用户管理', '/user', 1, 1, 0, 2, 1, 'User Management', 'user', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (13, 'ģ�����', '/module', 1, 1, 0, 1, 1, 'Module Management', 'module', null);
+values (13, '模块管理', '/module', 1, 1, 0, 1, 1, 'Module Management', 'module', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (1, 'ϵͳ����', null, 0, 0, 1, 1, 1, 'System Settings', 'system_settings', null);
+values (1, '系统设置', null, 0, 0, 1, 1, 1, 'System Settings', 'system_settings', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (2, '��Ӧ�̹���', null, 0, 0, 1, 2, 1, 'Operator', 'abc', null);
+values (2, '供应商管理', null, 0, 0, 1, 2, 1, 'Operator', 'abc', null);
 insert into BASE_MODULES (module_id, module_name, module_url, parent_id, leaf, expanded, display_index, is_display, en_module_name, icon_css, information)
-values (21, '��Ӧ����Ϣ', '/oprator', 2, 1, 0, 1, 1, 'oprator', 'cde', null);
+values (21, '供应商信息', '/oprator', 2, 1, 0, 1, 1, 'oprator', 'cde', null);
 commit;
 
 
@@ -53,12 +53,12 @@ insert into BASE_ROLE_MODULE (role_module_id, role_id, module_id)values ('70D092
 commit;
 
 
-insert into BASE_ROLES (role_id, role_name, role_desc)values ('3D84F5FEB9D44E28B5D91710C637283A', '����Ա', '����Ա');
-insert into BASE_ROLES (role_id, role_name, role_desc)values ('754701188F1F40C782171D0E3040E5D2', '���Խ�ɫ', '���Խ�ɫ');
+insert into BASE_ROLES (role_id, role_name, role_desc)values ('3D84F5FEB9D44E28B5D91710C637283A', '管理员', '管理员');
+insert into BASE_ROLES (role_id, role_name, role_desc)values ('754701188F1F40C782171D0E3040E5D2', '测试角色', '测试角色');
 commit;
 
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '�����û�', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '��������Ա', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '�û���Ϣ');
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '用户信息');
 commit;
 
 insert into BASE_USER_ROLE (user_role_id, user_id, role_id)values ('D1424A23EB254AE59FFE604343E2BBB3', '38AD4E59A9D64F95AE77AAB16D198DDA', '3D84F5FEB9D44E28B5D91710C637283A');

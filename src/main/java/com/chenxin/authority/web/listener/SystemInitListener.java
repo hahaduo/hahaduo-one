@@ -16,7 +16,6 @@ import com.chenxin.authority.service.BaseFieldsService;
  */
 public class SystemInitListener implements ServletContextListener {
 
-	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		ServletContext servletContext = sce.getServletContext();
 		BaseFieldsService baseFieldsService = SpringContextHolder.getBean("baseFieldsServiceImpl");
@@ -26,7 +25,6 @@ public class SystemInitListener implements ServletContextListener {
 		servletContext.setAttribute("fields", baseFieldsService.selectAllByExample(criteria));
 	}
 
-	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
 
 	}

@@ -37,28 +37,28 @@ create table base_fields  (
 );
 
 comment on table base_fields is
-'ϵͳ�ֶ����ñ�';
+'系统字段设置表';
 
 comment on column base_fields.field_id is
-'�ֶ�ID';
+'字段ID';
 
 comment on column base_fields.field is
-'�ֶ�';
+'字段';
 
 comment on column base_fields.field_name is
-'�ֶ����';
+'字段名称';
 
 comment on column base_fields.value_field is
-'�ֶ�ֵ';
+'字段值';
 
 comment on column base_fields.display_field is
-'�ֶ���ʾֵ';
+'字段显示值';
 
 comment on column base_fields.enabled is
-'�Ƿ�����';
+'是否启用';
 
 comment on column base_fields.sort is
-'����';
+'排序';
 
 /*==============================================================*/
 /* Table: base_modules                                        */
@@ -79,40 +79,40 @@ create table base_modules  (
 );
 
 comment on table base_modules is
-'ϵͳģ���';
+'系统模块表';
 
 comment on column base_modules.module_id is
-'ģ��ID';
+'模块ID';
 
 comment on column base_modules.module_name is
-'ģ�����';
+'模块名称';
 
 comment on column base_modules.module_url is
-'ģ��URL';
+'模块URL';
 
 comment on column base_modules.parent_id is
-'��ģ��ID';
+'父模块ID';
 
 comment on column base_modules.leaf is
-'Ҷ�ӽڵ�(0:��֦�ڵ�;1:Ҷ�ӽڵ�)';
+'叶子节点(0:树枝节点;1:叶子节点)';
 
 comment on column base_modules.expanded is
-'չ��״̬(1:չ��;0:����)';
+'展开状态(1:展开;0:收缩)';
 
 comment on column base_modules.display_index is
-'��ʾ˳��';
+'显示顺序';
 
 comment on column base_modules.is_display is
-'�Ƿ���ʾ 0:�� 1:��';
+'是否显示 0:否 1:是';
 
 comment on column base_modules.en_module_name is
-'ģ��Ӣ�����';
+'模块英文名称';
 
 comment on column base_modules.icon_css is
-'ͼ�������ʽ';
+'图标或者样式';
 
 comment on column base_modules.information is
-'�ڵ�˵��';
+'节点说明';
 
 /*==============================================================*/
 /* Table: base_role_module                                    */
@@ -125,16 +125,16 @@ create table base_role_module  (
 );
 
 comment on table base_role_module is
-'��ɫģ���';
+'角色模块表';
 
 comment on column base_role_module.role_module_id is
-'��ɫģ��ID';
+'角色模块ID';
 
 comment on column base_role_module.role_id is
-'��ɫID';
+'角色ID';
 
 comment on column base_role_module.module_id is
-'ģ��ID';
+'模块ID';
 
 /*==============================================================*/
 /* Table: base_roles                                          */
@@ -147,16 +147,16 @@ create table base_roles  (
 );
 
 comment on table base_roles is
-'��ɫ��';
+'角色表';
 
 comment on column base_roles.role_id is
-'��ɫID';
+'角色ID';
 
 comment on column base_roles.role_name is
-'��ɫ���';
+'角色名称';
 
 comment on column base_roles.role_desc is
-'��ɫ����';
+'角色描述';
 
 /*==============================================================*/
 /* Table: base_user_role                                      */
@@ -169,16 +169,16 @@ create table base_user_role  (
 );
 
 comment on table base_user_role is
-'�û���ɫ��';
+'用户角色表';
 
 comment on column base_user_role.user_role_id is
-'�û���ɫID';
+'用户角色ID';
 
 comment on column base_user_role.user_id is
-'�û�ID';
+'用户ID';
 
 comment on column base_user_role.role_id is
-'��ɫID';
+'角色ID';
 
 
 
@@ -202,44 +202,44 @@ create table base_users  (
 );
 
 comment on table base_users is
-'�û���';
+'用户表';
 
 comment on column base_users.user_id is
-'�û�ID';
+'用户ID';
 
 comment on column base_users.account is
-'�˺�';
+'账号';
 
 comment on column base_users.password is
-'����
+'密码
 DigestUtils.md5Hex(DigestUtils.md5Hex(password){account})';
 
 comment on column base_users.real_name is
-'�û���ʵ����';
+'用户真实姓名';
 
 comment on column base_users.sex is
-'�Ա� 0:�� 1:Ů';
+'性别 0:男 1:女';
 
 comment on column base_users.email is
-'�����ʼ���ַ';
+'电子邮件地址';
 
 comment on column base_users.mobile is
-'�ֻ�';
+'手机';
 
 comment on column base_users.office_phone is
-'�칫�绰';
+'办公电话';
 
 comment on column base_users.error_count is
-'����������';
+'密码错误次数';
 
 comment on column base_users.last_login_time is
-'�ϴε�¼ʱ��';
+'上次登录时间';
 
 comment on column base_users.last_login_ip is
-'�ϴε�¼IP��ַ';
+'上次登录IP地址';
 
 comment on column base_users.remark is
-'��ע';
+'备注';
 
 alter table base_role_module
    add constraint FK_BASE_ROL_REFERENCE_BASE_ROL foreign key (role_id)
