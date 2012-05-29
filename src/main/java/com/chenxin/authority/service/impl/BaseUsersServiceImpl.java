@@ -63,7 +63,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 
 	private static final Logger logger = LoggerFactory.getLogger(BaseUsersServiceImpl.class);
 
-	@Override
 	public String selectByBaseUser(Criteria criteria) {
 		// 条件查询
 		List<BaseUsers> list = this.baseUsersMapper.selectByExample(criteria);
@@ -73,7 +72,7 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		}
 		BaseUsers dataBaseUser = list.get(0);
 		//错误3次,并且时间未到
-		if (dataBaseUser.getErrorCount() >= 3 && compareTo(dataBaseUser.getLastLoginTime())) {
+		if (dataBaseUser.getErrorCount() >= 30 && compareTo(dataBaseUser.getLastLoginTime())) {
 			return "请你联系管理员，或者"+millisText+"之后再次尝试！";
 		}
 		// 传入的password已经md5过一次了,并且为小写，加入salt值
@@ -109,7 +108,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		return this.baseUsersMapper.selectByExample(example);
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String deleteByPrimaryKey(Criteria example) {
 		int result = 0;
@@ -120,7 +118,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		return result > 0 ? "01" : "00";
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String updateUserPassword(Criteria example) {
 		BaseUsers user = (BaseUsers) example.get("user");
@@ -140,7 +137,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 	}
 
 	@SuppressWarnings("unchecked")
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String saveUser(Criteria example) {
 		BaseUsers user = (BaseUsers) example.get("user");
@@ -184,7 +180,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		return "01";
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String resetPwdByPrimaryKey(Criteria example) {
 		String userId = example.getAsString("userId");
@@ -199,13 +194,11 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		return this.baseUsersMapper.updateByPrimaryKeySelective(user) > 0 ? "01" : "00";
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String updateByPrimaryKeySelective(BaseUsers user) {
 		return this.baseUsersMapper.updateByPrimaryKeySelective(user) > 0 ? "01" : "00";
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String updatePassword(Criteria example) {
 		BaseUsers user=this.baseUsersMapper.selectByPrimaryKey(example.getAsString("userId"));
@@ -218,7 +211,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		updateUser.setPassword(encrypt(password, user.getAccount()));
 		return this.baseUsersMapper.updateByPrimaryKeySelective(updateUser) > 0 ? "01" : "00";
 	}
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String validateAccount(Criteria example) {
 		return this.baseUsersMapper.countByExample(example) > 0 ? "00" : "01";
@@ -287,7 +279,6 @@ public class BaseUsersServiceImpl implements BaseUsersService {
 		return (now - lastly) <= millis;
 	}
 
-	@Override
 	@Transactional(readOnly = false, propagation = Propagation.REQUIRED, rollbackFor = { Exception.class })
 	public String findPassword(Criteria example) throws Exception {
 		BaseUsers user = (BaseUsers) example.get("user");

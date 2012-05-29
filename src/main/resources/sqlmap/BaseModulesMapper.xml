@@ -92,7 +92,7 @@
     </if>
   </select>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chenxin.authority.pojo.Criteria" >
-    <include refid="common.Oracle_Pagination_Head" />
+    <!--<include refid="common.Oracle_Pagination_Head" />-->
     select
     <if test="distinct" >
       distinct
@@ -105,7 +105,7 @@
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
-    <include refid="common.Oracle_Pagination_Tail" />
+    <!--<include refid="common.Oracle_Pagination_Tail" />-->
   </select>
   <!-- 动态sql，最好不要带外部参数拼装进来，防止SQL注入 -->
   <select id="selectByDynamicSql" parameterType="com.chenxin.authority.pojo.Criteria"

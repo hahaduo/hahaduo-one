@@ -1,24 +1,24 @@
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '0', '男', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '1', '女', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '2', '其他', 1, 3);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'sex', '性别', '3', '保密', 0, 4);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '10', '10条/页', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '20', '20条/页', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '30', '30条/页', 1, 3);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '50', '50条/页', 1, 4);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '风格', 'xtheme-blue.css', '经典蓝色', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'theme', '风格', 'xtheme-gray.css', '简约灰色', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '父模块', '0', '父节点', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'leaf', '父模块', '1', '子节点', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', '展开状态', '0', '收缩', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'expanded', '展开状态', '1', '展开', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '是否显示', '0', '否', 1, 1);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'isdisplay', '是否显示', '1', '是', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '100', '100条/页', 1, 5);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '200', '200条/页', 1, 6);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'pagesize', '每页显示条数', '500', '500条/页', 0, 7);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '是否启用', '0', '禁用', 1, 2);
-insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (sys_guid(), 'enabled', '是否启用', '1', '启用', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'sex', '性别', '0', '男', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'sex', '性别', '1', '女', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'sex', '性别', '2', '其他', 1, 3);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'sex', '性别', '3', '保密', 0, 4);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '10', '10条/页', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '20', '20条/页', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '30', '30条/页', 1, 3);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '50', '50条/页', 1, 4);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'theme', '风格', 'xtheme-blue.css', '经典蓝色', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'theme', '风格', 'xtheme-gray.css', '简约灰色', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'leaf', '父模块', '0', '父节点', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'leaf', '父模块', '1', '子节点', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'expanded', '展开状态', '0', '收缩', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'expanded', '展开状态', '1', '展开', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'isdisplay', '是否显示', '0', '否', 1, 1);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'isdisplay', '是否显示', '1', '是', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '100', '100条/页', 1, 5);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '200', '200条/页', 1, 6);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'pagesize', '每页显示条数', '500', '500条/页', 0, 7);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'enabled', '是否启用', '0', '禁用', 1, 2);
+insert into BASE_FIELDS (field_id, field, field_name, value_field, display_field, enabled, sort)values (uuid(), 'enabled', '是否启用', '1', '启用', 1, 1);
 commit;
 
 
@@ -45,8 +45,10 @@ insert into BASE_ROLES (role_id, role_name, role_desc)values ('3D84F5FEB9D44E28B
 insert into BASE_ROLES (role_id, role_name, role_desc)values ('754701188F1F40C782171D0E3040E5D2', '测试角色', '测试角色');
 commit;
 
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
-insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '用户信息');
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', null, null);
+-- insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('E9F8563613364D13AC7F503591EE8F6E', 'test', 'c0f40fddd2c81de6bd37023d8219782f', '测试用户', 0, 'test@qq.com', '119', '110', to_date('21-11-2011 15:48:00', 'dd-mm-yyyy hh24:mi:ss'), null, null);
+insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', '127.0.0.1', '用户信息');
+-- insert into BASE_USERS (user_id, account, password, real_name, sex, email, mobile, office_phone, last_login_time, last_login_ip, remark)values ('38AD4E59A9D64F95AE77AAB16D198DDA', 'admin', 'c0f40fddd2c81de6bd37023d8219782f', '超级管理员', 0, 'admin@whty.com.cn', '119', '110', to_date('16-12-2011 12:01:36', 'dd-mm-yyyy hh24:mi:ss'), '127.0.0.1', '用户信息');
 commit;
 
 

@@ -65,14 +65,14 @@ public class ModuleController {
 		// 先查出所有的父节点
 		Criteria criteria = new Criteria();
 		StringBuilder sb = new StringBuilder();
-		sb.append("select a.module_id   as i, ").append("       a.module_name as n ").append("from   base_modules a ")
+		sb.append("select a.module_id as i, ").append(" a.module_name as n ").append("from base_modules a ")
 				.append("where  a.leaf = 0 ").append("order by a.module_id asc ");
 		criteria.put("dynamicSql", sb.toString());
 		List<HashMap<String, Object>> list = this.baseModulesService.selectByDynamicSql(criteria);
 		HashMap<Object, Object> map = new HashMap<Object, Object>();
 		for (int i = 0; i < list.size(); i++) {
 			HashMap<String, Object> temp = list.get(i);
-			map.put(temp.get("I"), temp.get("N"));
+			map.put(temp.get("i"), temp.get("n"));
 		}
 		map.put("0", "主菜单");
 		model.addAttribute("moduleMap", JackJson.fromObjectToJson(map));

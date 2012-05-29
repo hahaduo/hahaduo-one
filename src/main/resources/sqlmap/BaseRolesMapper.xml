@@ -23,7 +23,7 @@
     ROLE_ID, ROLE_NAME, ROLE_DESC
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chenxin.authority.pojo.Criteria" >
-    <include refid="common.Oracle_Pagination_Head" />
+    <!--<include refid="common.Oracle_Pagination_Head" />-->
     select
     <if test="distinct" >
       distinct
@@ -36,7 +36,7 @@
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
-    <include refid="common.Oracle_Pagination_Tail" />
+    <!--<include refid="common.Oracle_Pagination_Tail" />-->
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
